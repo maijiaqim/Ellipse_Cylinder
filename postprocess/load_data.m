@@ -1,0 +1,24 @@
+A = importdata('./Re_46_1_decay/force.dat');
+decay(:,1) = A.data(:,2);
+A = importdata('./Re_46_2_decay/force.dat');
+decay(:,2) = A.data(:,2);
+A = importdata('./Re_46_3_decay/force.dat');
+decay(:,3) = A.data(:,2);
+A = importdata('./Re_46_4_decay/force.dat');
+decay(:,4) = A.data(:,2);
+A = importdata('./Re_46_5_decay/force.dat');
+decay(:,5) = A.data(:,2);
+A = importdata('./Re_46_6_decay/force.dat');
+decay(:,6) = A.data(:,2);
+A = importdata('./Re_46_7_decay/force.dat');
+decay(:,7) = A.data(:,2);
+A = importdata('./Re_46_8_decay/force.dat');
+decay(:,8) = A.data(:,2);
+A = importdata('./Re_46_9_decay/force.dat');
+decay(:,9) = A.data(:,2);
+A = importdata('./Re_47_0_decay/force.dat');
+decay(:,10) = A.data(:,2);
+time = A.data(:,1);
+Re = 46.1:0.1:47.0;
+clear A
+save('decay.mat');
