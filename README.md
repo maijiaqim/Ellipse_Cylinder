@@ -3,7 +3,8 @@
 codes for ellipse cylinder
 include ./main ./postprocess
 
-## ./main
+
+## main
 * ./main/make_mesh
   * fpcyl.box
   * import.rea
@@ -19,4 +20,4 @@ include ./main ./postprocess
   * ellipse_grow.usr
   * README
 
-## ./postprocess
+## postprocess
