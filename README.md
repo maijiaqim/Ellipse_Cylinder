@@ -1,7 +1,9 @@
 # Ellipse_Cylinder
 
 codes for ellipse cylinder
-include ./main ./postprocess
+include 
+* main 
+* postprocess
 
 
 ## main
@@ -9,15 +11,14 @@ include ./main ./postprocess
   * fpcyl.box
   * import.rea
   * mkmesh
-  * README
 
 * ./main/SIZE_files
   * SIZE
-  * README
 
 * ./main/usr_files
   * ellipse_decay.usr
   * ellipse_grow.usr
-  * README
 
 ## postprocess
+* load_data.m
+* main_decay.m
