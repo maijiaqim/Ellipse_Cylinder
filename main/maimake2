@@ -1,0 +1,41 @@
+module load nek5000
+cd Re_46_1_decay
+./makenek zz
+sbatch sci_nek zz
+cd ..
+cd Re_46_2_decay
+./makenek zz
+sbatch sci_nek zz
+cd ..
+cd Re_46_3_decay
+./makenek zz
+sbatch sci_nek zz
+cd ..
+cd Re_46_4_decay
+./makenek zz
+sbatch sci_nek zz
+cd ..
+cd Re_46_5_decay
+./makenek zz
+sbatch sci_nek zz
+cd ..
+cd Re_46_6_decay
+./makenek zz
+sbatch sci_nek zz
+cd ..
+cd Re_46_7_decay
+./makenek zz
+sbatch sci_nek zz
+cd ..
+cd Re_46_8_decay
+./makenek zz
+sbatch sci_nek zz
+cd ..
+cd Re_46_9_decay
+./makenek zz
+sbatch sci_nek zz
+cd ..
+cd Re_47_0_decay
+./makenek zz
+sbatch sci_nek zz
+cd ..
