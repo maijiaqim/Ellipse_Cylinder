@@ -1,4 +1,4 @@
-# Ellipse_Cylinder
+# Project of Ellipse Cylinder
 
 codes for ellipse cylinder
 
