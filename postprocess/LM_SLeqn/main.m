@@ -16,6 +16,8 @@ clear hil;
     [hil,temp] = envelope(dragy(hilbert_region),10000,'peak');  
     % (Alternative) Hilbert Transformation: = abs(hilbert(decay(hilbert_region,i)));
     
+    model_func = @(x,t)SL_func(x,t,char);
+    
 % Check the envelope amplitude    
 %   for i = 1:col
 %       figure
@@ -49,7 +51,7 @@ clear hil;
 
     x0 = [sigma;k;t0];
 
-    [J,r] = jacobian_SL(x0,t_fit,hil_fit,char);
+    [J,r] = jacobian(x0,t_fit,hil_fit,model_func);
     res0 = norm(r);
         % figure
         % plot(t_fit,f);hold on
@@ -60,10 +62,12 @@ clear hil;
 %       Levenberg–Marquardt Loop
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
-    [x,r] = LM(x0,t_fit,hil_fit,300);
-    [x,r] = LM(x,t_fit,hil_fit,300);
+    [x,r] = LM(x0,t_fit,hil_fit,model_func,10);
 %% 
-    [x,r] = LM(x,t_fit,hil_fit,300);
+%     for mai = 1:10
+%         mai
+        [x,r] = LM(x,t_fit,hil_fit,model_func,500);
+%     end
     sgm = x(1);
     k = x(2);
     t0 = x(3);
@@ -75,6 +79,6 @@ clear hil;
     
 % Check plot
     figure
-    plot(t_fit,f0);hold on
+    plot(t_fit,f);hold on
     plot(t_fit,hil_fit);%hold on
         % plot(time(hilbert_region),dragy(hilbert_region))
