@@ -1,6 +1,7 @@
 function [x,res] = LM(x0,t,y,model_func,iter)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Levenberg-Marquardt Algorithm
+%   Levenberg-Marquardt Algorithm
+%
 %   Input:
 %       x0  : initial guess - parameters, in column-form
 %       t   : t_i - observed points
@@ -14,7 +15,7 @@ function [x,res] = LM(x0,t,y,model_func,iter)
 %   Required: 
 %       jacobian.m
 %
-% Written by Mai, Jiaqi, on 12/29/2017
+%   Written by Mai, Jiaqi, on 12/29/2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     m = length(x0);
     x = x0;
