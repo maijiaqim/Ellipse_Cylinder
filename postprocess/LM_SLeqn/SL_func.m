@@ -23,7 +23,7 @@ function output = myfunc(x,t,char)
 %   Output:
 %       A(t)
 %
-% Written by Mai, Jiaqi, on 12/28/2017
+%   Written by Mai, Jiaqi, on 12/28/2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     sigma = x(1);
     k = x(2);
