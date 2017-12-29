@@ -11,7 +11,7 @@ function [J,r] = jacobian(x,t,y,model_func)
 %       J   : Jacobian of residual function
 %       r   : residuals
 %
-% Written by Mai, Jiaqi, on 12/29/2017
+%   Written by Mai, Jiaqi, on 12/29/2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     n = length(t);
     m = length(x);
