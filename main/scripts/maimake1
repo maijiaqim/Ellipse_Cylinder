@@ -1,0 +1,30 @@
+mkdir ../Re_46_1_grow
+mkdir ../Re_46_2_grow
+mkdir ../Re_46_3_grow
+mkdir ../Re_46_4_grow
+mkdir ../Re_46_5_grow
+mkdir ../Re_46_6_grow
+mkdir ../Re_46_7_grow
+mkdir ../Re_46_8_grow
+mkdir ../Re_46_9_grow
+mkdir ../Re_47_0_grow
+./maimodify 46.1
+cp ./zz.* ./SIZE ./makenek ./sci_nek ../Re_46_1_grow
+./maimodify 46.2
+cp ./zz.* ./SIZE ./makenek ./sci_nek ../Re_46_2_grow
+./maimodify 46.3
+cp ./zz.* ./SIZE ./makenek ./sci_nek ../Re_46_3_grow
+./maimodify 46.4
+cp ./zz.* ./SIZE ./makenek ./sci_nek ../Re_46_4_grow
+./maimodify 46.5
+cp ./zz.* ./SIZE ./makenek ./sci_nek ../Re_46_5_grow
+./maimodify 46.6
+cp ./zz.* ./SIZE ./makenek ./sci_nek ../Re_46_6_grow
+./maimodify 46.7
+cp ./zz.* ./SIZE ./makenek ./sci_nek ../Re_46_7_grow
+./maimodify 46.8
+cp ./zz.* ./SIZE ./makenek ./sci_nek ../Re_46_8_grow
+./maimodify 46.9
+cp ./zz.* ./SIZE ./makenek ./sci_nek ../Re_46_9_grow
+./maimodify 47.0
+cp ./zz.* ./SIZE ./makenek ./sci_nek ../Re_47_0_grow

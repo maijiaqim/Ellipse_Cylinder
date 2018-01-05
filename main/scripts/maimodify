@@ -1,0 +1,5 @@
+#!/bin/bash
+
+Re=$1
+
+sed -i '6s/-.*000     p002 VISCOS/-'$Re'000     p002 VISCOS/' zz.rea

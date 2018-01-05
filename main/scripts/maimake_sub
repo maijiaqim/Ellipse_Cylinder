@@ -1,0 +1,32 @@
+module load nek5000
+cd ../Re_46_1_grow
+./makenek zz
+sbatch sci_nek zz
+cd ../Re_46_2_grow
+./makenek zz
+sbatch sci_nek zz
+cd ../Re_46_3_grow
+./makenek zz
+sbatch sci_nek zz
+cd ../Re_46_4_grow
+./makenek zz
+sbatch sci_nek zz
+cd ../Re_46_5_grow
+./makenek zz
+sbatch sci_nek zz
+cd ../Re_46_6_grow
+./makenek zz
+sbatch sci_nek zz
+cd ../Re_46_7_grow
+./makenek zz
+sbatch sci_nek zz
+cd ../Re_46_8_grow
+./makenek zz
+sbatch sci_nek zz
+cd ../Re_46_9_grow
+./makenek zz
+sbatch sci_nek zz
+cd ../Re_47_0_grow
+./makenek zz
+sbatch sci_nek zz
+cd ..
