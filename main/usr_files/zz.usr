@@ -72,7 +72,7 @@ c-----------------------------------------------------------------------
 
       if (istep.eq.0) call set_obj  ! define objects for surface integrals
 
-      call estimate_strouhal
+      ! call estimate_strouhal
       call comp_vort3(vort , w1, w2, vx, vy, vz)
       call copy (T,vort,n)    ! Vorticity --> T
       ifto = .true.           ! Dump vorticity as T
